@@ -44,7 +44,7 @@ const HeroSection = () => {
     icon: Zap,
     delay: "0.4s"
   }];
-  return <section id="home" className="min-h-screen bg-gradient-hero relative overflow-hidden pt-20">
+  return <section id="home" className="bg-gradient-hero relative overflow-hidden pt-20">
       {/* Animated Background Particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-20 h-20 rounded-full bg-primary/10 animate-float blur-xl" />
@@ -62,7 +62,7 @@ const HeroSection = () => {
       }} />
       </div>
       
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 animate-fade-in">
