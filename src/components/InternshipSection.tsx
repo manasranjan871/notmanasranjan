@@ -6,6 +6,8 @@ const InternshipSection = () => {
     {
       icon: Building2,
       company: "Tata Steel Kalinganagar",
+      website:
+        "https://www.tatasteel.com/corporate/wealsomaketomorrow/greener-tomorrow/tata-steel-kalinganagar-steel-plant/",
       location: "Jajpur, Odisha",
       department: "Transmission & Distribution",
       label: "Subject",
@@ -14,6 +16,7 @@ const InternshipSection = () => {
     {
       icon: ShieldCheck,
       company: "Sakthi Auto Components Limited",
+      website: "https://www.sakthiauto.com/",
       location: "Tamilnadu",
       department: "Quality Control",
       label: "Role",
