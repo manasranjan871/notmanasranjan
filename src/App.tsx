@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import ScrollProgress from "@/components/ScrollProgress";
+import ScrollFluidIcons from "@/components/ScrollFluidIcons";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ElectricalSystems from "./pages/skills/ElectricalSystems";
@@ -24,6 +25,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <ScrollProgress />
+          <ScrollFluidIcons />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/skills/electrical-systems" element={<ElectricalSystems />} />
