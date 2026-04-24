@@ -126,6 +126,21 @@ All colors MUST be HSL.
    icons throughout the site.
    ============================================ */
 
+:root {
+  --scroll-velocity: 0;
+  --scroll-tilt: 0deg;
+  --scroll-shift: 0px;
+  --scroll-scale: 1;
+}
+
+/* Fluid scroll-reactive motion for every lucide icon */
+svg.lucide {
+  transform: translateY(var(--scroll-shift)) rotate(var(--scroll-tilt)) scale(var(--scroll-scale));
+  transition: transform 0.18s cubic-bezier(0.22, 1, 0.36, 1);
+  transform-origin: center;
+  will-change: transform;
+}
+
 @layer utilities {
   @keyframes icon-float {
     0%, 100% { transform: translateY(0); }
