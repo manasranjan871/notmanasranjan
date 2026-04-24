@@ -24,11 +24,11 @@ const Navigation = () => {
 
   const navLinks = [
     { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "skills", label: "Skills" },
-    { id: "services", label: "Services" },
-    { id: "projects", label: "Projects" },
     { id: "internship", label: "Internship" },
+    { id: "projects", label: "Projects" },
+    { id: "skills", label: "Skills" },
+    { id: "about", label: "Education" },
+    { id: "services", label: "Services" },
     { id: "contact", label: "Contact" },
   ];
 
