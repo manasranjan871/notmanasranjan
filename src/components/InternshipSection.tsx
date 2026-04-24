@@ -51,9 +51,17 @@ const InternshipSection = () => {
                     <item.icon className="h-7 w-7 text-primary-foreground" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-heading text-xl font-bold leading-tight">
-                      {item.company}
-                    </h3>
+                    <a
+                      href={item.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 group"
+                    >
+                      <h3 className="font-heading text-xl font-bold leading-tight group-hover:text-primary transition-colors">
+                        {item.company}
+                      </h3>
+                      <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
+                    </a>
                     <p className="text-sm text-muted-foreground mt-1">{item.location}</p>
                   </div>
                 </div>
