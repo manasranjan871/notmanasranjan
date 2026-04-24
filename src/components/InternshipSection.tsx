@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Briefcase, Building2, ShieldCheck } from "lucide-react";
+import { Briefcase, Building2, ShieldCheck, ExternalLink } from "lucide-react";
 
 const InternshipSection = () => {
   const internships = [
