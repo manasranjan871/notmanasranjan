@@ -97,13 +97,16 @@ const ProjectsSection = () => {
                         <h4 className="font-semibold text-lg mb-3">Technologies Used</h4>
                         <div className="flex flex-wrap gap-2">
                           {project.technologies.map((tech, i) => (
-                            <span
+                            <a
                               key={i}
-                              className="inline-flex items-center gap-2 px-3 py-2 bg-muted rounded-lg text-sm font-medium"
+                              href={`https://www.google.com/search?q=${encodeURIComponent(tech.name)}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 px-3 py-2 bg-muted rounded-lg text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-all hover:scale-105"
                             >
-                              <tech.icon className="h-4 w-4 text-primary" />
+                              <tech.icon className="h-4 w-4 text-primary group-hover:text-primary-foreground" />
                               {tech.name}
-                            </span>
+                            </a>
                           ))}
                         </div>
                       </div>
