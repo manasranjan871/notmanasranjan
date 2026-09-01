@@ -30,7 +30,7 @@ const HeroSection = () => {
   }];
   const statsCards = [{
     value: "B.Tech",
-    label: "Final Year",
+    label: "Graduate",
     icon: Award,
     delay: "0s"
   }, {
