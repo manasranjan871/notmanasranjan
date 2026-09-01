@@ -1,24 +1,30 @@
 import { Card } from "@/components/ui/card";
-import { GraduationCap, BookOpen, Target } from "lucide-react";
+import { GraduationCap, BookOpen, Target, Award } from "lucide-react";
 
 const AboutSection = () => {
   const education = [
     {
+      level: "PGDCA - Post Graduate Diploma in Computer Applications",
+      institution: "R.R Computer Institute, Deogarh, Odisha",
+      status: "Completed",
+      icon: Award,
+    },
+    {
       level: "B.Tech - Electrical Engineering",
       institution: "CUPGS BPUT, Rourkela",
-      status: "Expected July 2026",
+      status: "Completed",
       icon: GraduationCap,
     },
     {
       level: "12th Grade",
       institution: "Bharatiya Vidya Niketan Higher Secondary School, Bhubaneswar",
-      status: "74%",
+      status: "Completed",
       icon: BookOpen,
     },
     {
       level: "10th Grade",
       institution: "Panchayat High School, Kantabahal",
-      status: "72%",
+      status: "Completed",
       icon: BookOpen,
     },
   ];
@@ -46,14 +52,16 @@ const AboutSection = () => {
               <div>
                 <h3 className="font-heading text-2xl font-bold mb-4">My Journey</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  I am a final-year B.Tech student in Electrical Engineering with a strong interest in smart energy systems, 
+                  I am a B.Tech graduate in Electrical Engineering with a strong interest in smart energy systems, 
                   IoT integration, and sustainable technologies. Passionate about innovation and automation, I focus on developing 
                   intelligent solutions that improve energy efficiency and power management.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mt-4">
-                  My current work includes designing a Smart Energy Meter with Load Monitoring and IoT Integration, reflecting my 
-                  dedication to merging electrical engineering with modern digital technologies. I aim to pursue a career in the EV 
-                  industry, smart grid systems, embedded design, or renewable energy applications.
+                  I recently completed my PGDCA (Post Graduate Diploma in Computer Applications) to strengthen my computer skills 
+                  and bridge the gap between electrical engineering and modern software technologies. My work includes designing a 
+                  Smart Energy Meter with Load Monitoring and IoT Integration, reflecting my dedication to merging engineering with 
+                  digital innovation. I aim to pursue a career in the EV industry, smart grid systems, embedded design, or renewable 
+                  energy applications.
                 </p>
               </div>
             </div>
@@ -65,6 +73,9 @@ const AboutSection = () => {
               </span>
               <span className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium">
                 Physics
+              </span>
+              <span className="px-4 py-2 bg-energy-cyan/10 text-energy-cyan rounded-full text-sm font-medium">
+                Computer Applications
               </span>
             </div>
           </Card>
